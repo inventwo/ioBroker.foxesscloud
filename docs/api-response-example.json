@@ -1,0 +1,387 @@
+{
+  "errno": 0,
+  "msg": "Operation successful",
+  "result": [
+    {
+      "datas": [
+        {
+          "unit": "kW",
+          "name": "PVPower",
+          "variable": "pvPower",
+          "value": 0
+        },
+        {
+          "unit": "V",
+          "name": "PV1Volt",
+          "variable": "pv1Volt",
+          "value": 122.2
+        },
+        {
+          "unit": "A",
+          "name": "PV1Current",
+          "variable": "pv1Current",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "PV1Power",
+          "variable": "pv1Power",
+          "value": 0
+        },
+        {
+          "unit": "V",
+          "name": "PV2Volt",
+          "variable": "pv2Volt",
+          "value": 119.7
+        },
+        {
+          "unit": "A",
+          "name": "PV2Current",
+          "variable": "pv2Current",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "PV2Power",
+          "variable": "pv2Power",
+          "value": -0.002
+        },
+        {
+          "unit": "V",
+          "name": "PV3Volt",
+          "variable": "pv3Volt",
+          "value": 0
+        },
+        {
+          "unit": "A",
+          "name": "PV3Current",
+          "variable": "pv3Current",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "PV3Power",
+          "variable": "pv3Power",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "EPSPower",
+          "variable": "epsPower",
+          "value": 0.001
+        },
+        {
+          "unit": "A",
+          "name": "EPS-RCurrent",
+          "variable": "epsCurrentR",
+          "value": 0.3
+        },
+        {
+          "unit": "V",
+          "name": "EPS-RVolt",
+          "variable": "epsVoltR",
+          "value": 226.9
+        },
+        {
+          "unit": "kW",
+          "name": "EPS-RPower",
+          "variable": "epsPowerR",
+          "value": 0
+        },
+        {
+          "unit": "A",
+          "name": "EPS-SCurrent",
+          "variable": "epsCurrentS",
+          "value": 0.3
+        },
+        {
+          "unit": "V",
+          "name": "EPS-SVolt",
+          "variable": "epsVoltS",
+          "value": 230.4
+        },
+        {
+          "unit": "kW",
+          "name": "EPS-SPower",
+          "variable": "epsPowerS",
+          "value": 0.001
+        },
+        {
+          "unit": "A",
+          "name": "EPS-TCurrent",
+          "variable": "epsCurrentT",
+          "value": 0.2
+        },
+        {
+          "unit": "V",
+          "name": "EPS-TVolt",
+          "variable": "epsVoltT",
+          "value": 229.7
+        },
+        {
+          "unit": "kW",
+          "name": "EPS-TPower",
+          "variable": "epsPowerT",
+          "value": 0
+        },
+        {
+          "unit": "A",
+          "name": "RCurrent",
+          "variable": "RCurrent",
+          "value": 0.7
+        },
+        {
+          "unit": "V",
+          "name": "RVolt",
+          "variable": "RVolt",
+          "value": 227.8
+        },
+        {
+          "unit": "Hz",
+          "name": "RFreq",
+          "variable": "RFreq",
+          "value": 49.99
+        },
+        {
+          "unit": "kW",
+          "name": "RPower",
+          "variable": "RPower",
+          "value": -0.028
+        },
+        {
+          "unit": "A",
+          "name": "SCurrent",
+          "variable": "SCurrent",
+          "value": 0.7
+        },
+        {
+          "unit": "V",
+          "name": "SVolt",
+          "variable": "SVolt",
+          "value": 230.6
+        },
+        {
+          "unit": "kW",
+          "name": "SPower",
+          "variable": "SPower",
+          "value": -0.034
+        },
+        {
+          "unit": "A",
+          "name": "TCurrent",
+          "variable": "TCurrent",
+          "value": 0.7
+        },
+        {
+          "unit": "V",
+          "name": "TVolt",
+          "variable": "TVolt",
+          "value": 230.1
+        },
+        {
+          "unit": "kW",
+          "name": "TPower",
+          "variable": "TPower",
+          "value": 0.062
+        },
+        {
+          "unit": "℃",
+          "name": "AmbientTemperature",
+          "variable": "ambientTemperation",
+          "value": 41.1
+        },
+        {
+          "unit": "℃",
+          "name": "InvTemperation",
+          "variable": "invTemperation",
+          "value": 29.8
+        },
+        {
+          "unit": "℃",
+          "name": "batTemperature",
+          "variable": "batTemperature_1",
+          "value": 24.6
+        },
+        {
+          "unit": "kW",
+          "name": "Load Power",
+          "variable": "loadsPower",
+          "value": 3.033
+        },
+        {
+          "unit": "kW",
+          "name": "LoadsRPower",
+          "variable": "loadsPowerR",
+          "value": 1.778
+        },
+        {
+          "unit": "kW",
+          "name": "LoadsSPower",
+          "variable": "loadsPowerS",
+          "value": 0.038
+        },
+        {
+          "unit": "kW",
+          "name": "LoadsTPower",
+          "variable": "loadsPowerT",
+          "value": 1.217
+        },
+        {
+          "unit": "kW",
+          "name": "Output Power",
+          "variable": "generationPower",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "Feed-in Power",
+          "variable": "feedinPower",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "GridConsumption Power",
+          "variable": "gridConsumptionPower",
+          "value": 3.033
+        },
+        {
+          "unit": "V",
+          "name": "InvBatVolt",
+          "variable": "invBatVolt",
+          "value": 232.3
+        },
+        {
+          "unit": "A",
+          "name": "InvBatCurrent",
+          "variable": "invBatCurrent",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "invBatPower",
+          "variable": "invBatPower_1",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "Charge Power",
+          "variable": "batChargePower",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "Discharge Power",
+          "variable": "batDischargePower",
+          "value": 0
+        },
+        {
+          "unit": "V",
+          "name": "BatVolt",
+          "variable": "batVolt_1",
+          "value": 232.4
+        },
+        {
+          "unit": "A",
+          "name": "BatCurrent",
+          "variable": "batCurrent_1",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "MeterPower",
+          "variable": "meterPower",
+          "value": 3.033
+        },
+        {
+          "unit": "kW",
+          "name": "Meter2Power",
+          "variable": "meterPower2",
+          "value": 0
+        },
+        {
+          "unit": "kW",
+          "name": "MeterRPower",
+          "variable": "meterPowerR",
+          "value": 1.705
+        },
+        {
+          "unit": "kW",
+          "name": "MeterSPower",
+          "variable": "meterPowerS",
+          "value": 0.073
+        },
+        {
+          "unit": "kW",
+          "name": "MeterTPower",
+          "variable": "meterPowerT",
+          "value": 1.148
+        },
+        {
+          "unit": "%",
+          "name": "SoC",
+          "variable": "SoC_1",
+          "value": 10
+        },
+        {
+          "unit": "kWh",
+          "name": "Cumulative power generation",
+          "variable": "generation",
+          "value": 35.8
+        },
+        {
+          "name": "Running State",
+          "variable": "runningState",
+          "value": "163"
+        },
+        {
+          "name": "The current error code is reported",
+          "variable": "currentFault",
+          "value": ""
+        },
+        {
+          "name": "The number of errors",
+          "variable": "currentFaultCount",
+          "value": "0"
+        },
+        {
+          "unit": "kWh",
+          "name": "Total grid electricity consumption",
+          "variable": "gridConsumption",
+          "value": 126.1
+        },
+        {
+          "unit": "kWh",
+          "name": "Load power consumption",
+          "variable": "loads",
+          "value": 152
+        },
+        {
+          "unit": "kWh",
+          "name": "The total energy of the feeder",
+          "variable": "feedin",
+          "value": 0.5
+        },
+        {
+          "unit": "kWh",
+          "name": "Total charge energy",
+          "variable": "chargeEnergyToTal",
+          "value": 12.3
+        },
+        {
+          "unit": "kWh",
+          "name": "Total discharge energy",
+          "variable": "dischargeEnergyToTal",
+          "value": 17
+        },
+        {
+          "unit": "kWh",
+          "name": "Photovoltaic power generation",
+          "variable": "PVEnergyTotal",
+          "value": 35.7
+        }
+      ],
+      "time": "2026-01-22 17:27:02 CET+0100",
+      "deviceSN": "XXXXXXXXXXXX000"
+    }
+  ]
+}

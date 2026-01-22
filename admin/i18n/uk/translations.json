@@ -1,0 +1,9 @@
+{
+    "API Token": "Маркер API",
+    "API-Key aus der FoxESS Cloud": "Ключ API з порталу FoxESS Cloud",
+    "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)": "Інтервал оновлення в секундах (рекомендовано: 60, мінімум: 60, обмеження API: 1440 викликів/день)",
+    "FoxESS Cloud API Configuration": "Конфігурація FoxESS Cloud API",
+    "Serial Number (SN)": "Серійний номер (SN)",
+    "Seriennummer vom Inverter": "Серійний номер інвертора",
+    "Update Interval (seconds)": "Інтервал оновлення (секунди)"
+}

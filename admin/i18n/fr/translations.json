@@ -1,0 +1,9 @@
+{
+    "API Token": "Jeton API",
+    "API-Key aus der FoxESS Cloud": "Clé API du portail FoxESS Cloud",
+    "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)": "Intervalle de mise à jour en secondes (Recommandé : 60, Minimum : 60, Limite API : 1 440 appels/jour)",
+    "FoxESS Cloud API Configuration": "Configuration de l'API cloud FoxESS",
+    "Serial Number (SN)": "Numéro de série (SN)",
+    "Seriennummer vom Inverter": "Numéro de série de l'onduleur",
+    "Update Interval (seconds)": "Intervalle de mise à jour (secondes)"
+}

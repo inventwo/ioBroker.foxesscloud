@@ -1,0 +1,113 @@
+{
+    "common": {
+        "name": "foxesscloud",
+        "version": "0.1.0",
+        "news": {
+            "0.1.0": {
+                "en": "Initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Первоначальный выпуск",
+                "pt": "Lançamento inicial",
+                "nl": "Eerste release",
+                "fr": "Version initiale",
+                "it": "Rilascio iniziale",
+                "es": "Lanzamiento inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початковий випуск",
+                "zh-cn": "初次发布"
+            }
+        },
+        "title": "FoxESS Cloud",
+        "titleLang": {
+            "en": "FoxESS Cloud",
+            "de": "FoxESS Cloud",
+            "ru": "Облако FoxESS",
+            "pt": "Nuvem FoxESS",
+            "nl": "FoxESS-wolk",
+            "fr": "Nuage FoxESS",
+            "it": "FoxESSNuvola",
+            "es": "Nube FoxESS",
+            "pl": "Chmura FoxESS",
+            "uk": "Хмара FoxESS",
+            "zh-cn": "福克斯云"
+        },
+        "desc": {
+            "en": "Adapter to retrieve data from FoxESS Cloud API",
+            "de": "Adapter zum Abrufen von Daten aus der FoxESS Cloud API",
+            "ru": "Адаптер для получения данных из FoxESS Cloud API",
+            "pt": "Adaptador para recuperar dados da API FoxESS Cloud",
+            "nl": "Adapter om gegevens op te halen uit FoxESS Cloud API",
+            "fr": "Adaptateur pour récupérer les données de l'API FoxESS Cloud",
+            "it": "Adattatore per recuperare i dati dall'API FoxESS Cloud",
+            "es": "Adaptador para recuperar datos de FoxESS Cloud API",
+            "pl": "Adapter do pobierania danych z FoxESS Cloud API",
+            "uk": "Адаптер для отримання даних з FoxESS Cloud API",
+            "zh-cn": "Adapter to retrieve data from FoxESS Cloud API"
+        },
+        "authors": [
+            "skvarel <skvarel@inventwo.com>"
+        ],
+        "keywords": [
+            "FoxESS",
+            "Enpal",
+            "Solar",
+            "PV",
+            "Battery"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "foxesscloud.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/inventwo/ioBroker.foxesscloud/main/admin/foxesscloud.png",
+        "readme": "https://github.com/inventwo/ioBroker.foxesscloud/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "energy",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "token": "",
+        "sn": "",
+        "interval": 60
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

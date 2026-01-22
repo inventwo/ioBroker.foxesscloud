@@ -1,0 +1,38 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "_info": {
+            "type": "header",
+            "text": "FoxESS Cloud API Configuration",
+            "size": 3
+        },
+        "token": {
+            "type": "password",
+            "label": "API Token",
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "help": "API-Key aus der FoxESS Cloud"
+        },
+        "sn": {
+            "type": "text",
+            "label": "Serial Number (SN)",
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "help": "Seriennummer vom Inverter"
+        },
+        "interval": {
+            "type": "number",
+            "label": "Update Interval (seconds)",
+            "min": 60,
+            "max": 3600,
+            "default": 60,
+            "sm": 12,
+            "md": 6,
+            "lg": 6,
+            "help": "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)"
+        }
+    }
+}
