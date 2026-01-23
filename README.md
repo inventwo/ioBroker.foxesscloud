@@ -3,7 +3,7 @@
 ## ioBroker adapter for FoxESS Cloud
 
 ![Number of Installations](https://iobroker.live/badges/foxesscloud-installed.svg) ![Current version in stable repository](https://iobroker.live/badges/foxesscloud-stable.svg)
-[![NPM version](https://img.shields.io/npm/v/iobroker.foxesscloud.svg)](https://www.npmjs.com/package/iobroker.foxesscloud)
+[![NPM Version](https://nodei.co/npm/iobroker.foxesscloud.svg?style=shields&data=v,u,d&color=orange)](https://www.npmjs.com/package/iobroker.foxesscloud)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.foxesscloud.svg)](https://www.npmjs.com/package/iobroker.foxesscloud)
 
 [![Paypal Donation](https://img.shields.io/badge/paypal-donate%20|%20spenden-green.svg)](https://www.paypal.com/donate/?hosted_button_id=7W6M3TFZ4W9LW)
