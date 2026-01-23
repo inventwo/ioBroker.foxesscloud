@@ -1,9 +1,0 @@
-{
-    "API Token": "API Token",
-    "API-Key aus der FoxESS Cloud": "API-Key aus der FoxESS Cloud",
-    "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)": "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)",
-    "FoxESS Cloud API Configuration": "FoxESS Cloud API Konfiguration",
-    "Serial Number (SN)": "Seriennummer (SN)",
-    "Seriennummer vom Inverter": "Seriennummer vom Inverter",
-    "Update Interval (seconds)": "Aktualisierungsintervall (Sekunden)"
-}

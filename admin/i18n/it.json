@@ -1,5 +1,5 @@
 {
-    "API Token": "Gettone API",
+    "API Token": "Token API",
     "API-Key aus der FoxESS Cloud": "Chiave API dal portale FoxESS Cloud",
     "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)": "Intervallo di aggiornamento in secondi (consigliato: 60, minimo: 60, limite API: 1440 chiamate/giorno)",
     "FoxESS Cloud API Configuration": "Configurazione API FoxESS Cloud",
