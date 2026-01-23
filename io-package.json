@@ -74,17 +74,17 @@
         },
         "dependencies": [
             {
-                "js-controller": ">=5.0.19"
+                "js-controller": ">=6.0.11"
             }
         ],
         "globalDependencies": [
             {
-                "admin": ">=6.17.14"
+                "admin": ">=7.6.17"
             }
-        ],
-        "protectedNative": ["token"],
-        "encryptedNative": ["token"]
+        ]
     },
+    "protectedNative": ["token"],
+    "encryptedNative": ["token"],
     "native": {
         "token": "",
         "sn": "",
