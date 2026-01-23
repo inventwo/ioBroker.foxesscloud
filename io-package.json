@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "foxesscloud",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "news": {
+      "0.1.2": {
+        "en": "Fix .vscode/settings.json",
+        "de": "Fix .vscode/settings.json",
+        "ru": "Исправить .vscode/settings.json",
+        "pt": "Corrigir .vscode/settings.json",
+        "nl": ".vscode/instellingen.json herstellen",
+        "fr": "Correction .vscode/settings.json",
+        "it": "Fissare .vscode/settings.json",
+        "es": "Fijar .vscode/settings.json",
+        "pl": "Fix .vscode / settings.json",
+        "uk": "Виправлення .vscode/settings.json",
+        "zh-cn": "修复.vscode/设置.json"
+      },
       "0.1.1": {
         "en": "Remove mocha from devDependencies (included in @iobroker/testing)\nAdd .vscode/settings.json with JSON schema definitions",
         "de": "Mocha von devDependencies entfernen (in @iobroker/testing enthalten)\nFügen Sie .vscode/settings.json mit JSON Schemadefinitionen hinzu",

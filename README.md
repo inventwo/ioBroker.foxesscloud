@@ -75,7 +75,7 @@ The adapter creates the following data points:
 <!--
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.1.2 (2026-01-23)
 - (skvarel) Fix .vscode/settings.json
 
 ### 0.1.1 (2026-01-23)
