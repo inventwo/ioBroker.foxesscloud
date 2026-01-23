@@ -17,7 +17,6 @@
                 "zh-cn": "初次发布"
             }
         },
-        "title": "FoxESS Cloud",
         "titleLang": {
             "en": "FoxESS Cloud",
             "de": "FoxESS Cloud",
@@ -54,9 +53,12 @@
             "PV",
             "Battery"
         ],
-        "license": "MIT",
+        "licenseInformation": {
+            "license": "MIT",
+            "type": "free"
+        },
+        "tier": 3,
         "platform": "Javascript/Node.js",
-        "main": "main.js",
         "icon": "foxesscloud.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/inventwo/ioBroker.foxesscloud/main/admin/foxesscloud.png",
@@ -72,14 +74,16 @@
         },
         "dependencies": [
             {
-                "js-controller": ">=3.3.22"
+                "js-controller": ">=5.0.19"
             }
         ],
         "globalDependencies": [
             {
-                "admin": ">=5.1.13"
+                "admin": ">=6.17.14"
             }
-        ]
+        ],
+        "protectedNative": ["token"],
+        "encryptedNative": ["token"]
     },
     "native": {
         "token": "",

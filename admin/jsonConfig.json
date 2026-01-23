@@ -10,17 +10,21 @@
         "token": {
             "type": "password",
             "label": "API Token",
+            "xs": 12,
             "sm": 12,
             "md": 12,
             "lg": 12,
+            "xl": 12,
             "help": "API-Key aus der FoxESS Cloud"
         },
         "sn": {
             "type": "text",
             "label": "Serial Number (SN)",
+            "xs": 12,
             "sm": 12,
             "md": 12,
             "lg": 12,
+            "xl": 12,
             "help": "Seriennummer vom Inverter"
         },
         "interval": {
@@ -29,9 +33,11 @@
             "min": 60,
             "max": 3600,
             "default": 60,
+            "xs": 12,
             "sm": 12,
             "md": 6,
             "lg": 6,
+            "xl": 6,
             "help": "Aktualisierungsintervall in Sekunden (Empfohlen: 60, Minimum: 60, API-Limit: 1440 Calls/Tag)"
         }
     }
