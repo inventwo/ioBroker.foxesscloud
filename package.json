@@ -37,7 +37,6 @@
     "@iobroker/testing": "^5.2.2",
     "dotenv": "^17.2.3",
     "eslint": "^9.0.0",
-    "mocha": "^10.2.0",
     "should": "^13.2.3"
   },
   "main": "main.js",
@@ -48,9 +47,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "test:js": "mocha --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
-    "test:package": "mocha test/package --exit",
-    "test:integration": "mocha test/integration --exit",
+    "test:js": "node node_modules/@iobroker/testing/node_modules/mocha/bin/mocha.js --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
+    "test:package": "node node_modules/@iobroker/testing/node_modules/mocha/bin/mocha.js test/package --exit",
+    "test:integration": "node node_modules/@iobroker/testing/node_modules/mocha/bin/mocha.js test/integration --exit",
     "test": "npm run test:package",
     "check": "tsc --noEmit -p tsconfig.check.json",
     "check:ts": "tsc --noEmit",
