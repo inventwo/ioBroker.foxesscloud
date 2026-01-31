@@ -75,7 +75,7 @@ The adapter creates the following data points:
 <!--
 	### **WORK IN PROGRESS**
 -->
-### 0.1.4 (2026-01-31)
+### **WORK IN PROGRESS**
 - (skvarel) Improved: Removed unnecessary devDependencies (eslint, should, dotenv) to follow ioBroker best practices.
 - (skvarel) Improved: Updated test scripts to use standard mocha command instead of hardcoded paths.
 - (skvarel) Improved: Switched Node.js core module imports to node:xxx format where applicable.
