@@ -80,17 +80,16 @@
       "Battery"
     ],
     "licenseInformation": {
-      "license": "MIT",
-      "type": "free"
+      "type": "free",
+      "license": "MIT"
     },
-    "tier": 3,
     "platform": "Javascript/Node.js",
     "icon": "foxesscloud.png",
-    "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/inventwo/ioBroker.foxesscloud/main/admin/foxesscloud.png",
-    "readme": "https://github.com/inventwo/ioBroker.foxesscloud/blob/main/README.md",
+    "enabled": true,
     "loglevel": "info",
     "mode": "daemon",
+    "tier": 3,
     "type": "energy",
     "compact": true,
     "connectionType": "cloud",

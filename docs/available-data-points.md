@@ -123,7 +123,6 @@ When adding new data points to the adapter:
 1. Check this list for available variables
 2. Add state definition to `createStates()` in [main.js](../main.js)
 3. Add data extraction to `getData()` in [main.js](../main.js)
-4. Add translations to [admin/i18n/en/translations.json](../admin/i18n/en/translations.json) and [admin/i18n/de/translations.json](../admin/i18n/de/translations.json)
 
 ## API Response Example
 

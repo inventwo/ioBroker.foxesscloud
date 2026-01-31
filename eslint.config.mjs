@@ -26,7 +26,10 @@ export default [
 		// as this improves maintainability. jsdoc warnings will not block build process.
 		rules: {
 			// 'jsdoc/require-jsdoc': 'off',
-			'jsdoc/no-types': 'off', // Allow types in JSDoc for better IDE support
+			// 'jsdoc/require-param': 'off',
+			// 'jsdoc/require-param-description': 'off',
+			// 'jsdoc/require-returns-description': 'off',
+			// 'jsdoc/require-returns-check': 'off',
 		},
 	},
 ];

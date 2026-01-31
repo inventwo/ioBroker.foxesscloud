@@ -1,8 +1,10 @@
 {
-	"require": ["mocha", "should"],
-	"spec": ["test/**/*.test.js"],
-	"watch-files": ["!(node_modules|test)/**/*.test.js", "*.test.js", "test/**/test!(PackageFiles|Startup).js"],
-	"exclude": ["node_modules/**", "test/!(package|integration).js"],
-	"timeout": 5000,
-	"exit": true
+	"require": [
+		"test/mocha.setup.js"
+	],
+	"watch-files": [
+		"!(node_modules|test)/**/*.test.js",
+		"*.test.js",
+		"test/**/test!(PackageFiles|Startup).js"
+	]
 }

@@ -19,6 +19,17 @@
 		"noEmit": true,
 		"types": ["node"]
 	},
-	"include": ["**/*.js", "**/*.json", "admin/**/*.d.ts"],
-	"exclude": ["node_modules/**", "test/**", "admin/**/*.json", "admin/**/*.js", "enpalAPI.js", "enpalAPI_test.js"]
+	"include": [
+		"**/*.js",
+		"**/*.json",
+		"admin/**/*.d.ts"
+	],
+	"exclude": [
+		"node_modules/**",
+		"test/**",
+		"admin/**/*.json",
+		"admin/**/*.js",
+		"enpalAPI.js",
+		"enpalAPI_test.js"
+	]
 }
