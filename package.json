@@ -1,6 +1,6 @@
 {
   "name": "iobroker.foxesscloud",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "ioBroker adapter to retrieve data from FoxESS Cloud API",
   "author": {
     "name": "skvarel",
