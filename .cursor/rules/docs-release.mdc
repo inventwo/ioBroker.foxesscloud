@@ -1,0 +1,60 @@
+---
+description: README, changelog, and release workflow
+globs: README.md,io-package.json,CHANGELOG_OLD.md
+alwaysApply: false
+---
+
+# Documentation & Releases
+
+## README (English only — ioBroker requirement)
+
+Required sections: Installation, Configuration, Usage, Changelog, License, Support.
+
+- **All content in English** — no German or other languages in `README.md`
+- User-facing language; reference issues as `fixes #XX`
+- Update Configuration/Usage when admin options or behavior change
+
+## Changelog format
+
+```markdown
+<!--
+  ### **WORK IN PROGRESS**
+-->
+
+### **WORK IN PROGRESS**
+
+- (author) Plain user-facing description in English
+
+### 0.6.1 (2026-04-11)
+- (author) Released change
+```
+
+## Workflow
+
+- **During development:** all entries under `### **WORK IN PROGRESS**`
+- **Every fix or feature:** add a changelog entry — no exceptions
+- **Release:** `npm run release-patch|minor|major` — script sets version, moves WIP to version block
+- **Never** edit `CHANGELOG_OLD.md` manually
+- **Never** use bold type tags in changelog lines (breaks io-package news translation)
+
+## io-package.json
+
+- Keep `common.version` in sync with `package.json`
+- New config options: add to `native` with defaults
+
+## CI/CD
+
+Official ioBroker test actions:
+
+- `ioBroker/testing-action-check@v1` — lint + package check (**lint-first**)
+- `ioBroker/testing-action-adapter@v1` — adapter tests (Node 22.x, 24.x; ubuntu-22.04)
+- `ioBroker/testing-action-deploy@v1` — npm deploy on version tags (OIDC)
+
+Job order: `check-and-lint` (no deps) → `adapter-tests` → `integration-tests`.
+
+Credential/API tests: separate from main suite; not required for deployment; use 120+ s timeouts.
+
+## Reference docs
+
+- `docs/api-response-example.json` — sample API response with all data points
+- `docs/available-data-points.md` — variable overview with units

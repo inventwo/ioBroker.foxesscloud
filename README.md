@@ -8,7 +8,7 @@
 
 [![COMMUNITY](https://img.shields.io/badge/community%20-ioBroker%20|%20forum-blue.svg)](https://forum.iobroker.net/topic/83662/test-adapter-fox-ess-cloud)
 [![MAINTAINER](https://img.shields.io/badge/maintainer-skvarel%20@%20inventwo-yellowgreen.svg)](https://github.com/skvarel)
-[![AI](https://img.shields.io/badge/ai%20assisted-copilot-blue.svg)](https://github.com/inventwo/ioBroker.foxesscloud/blob/main/.github/copilot-instructions.md)
+[![AI](https://img.shields.io/badge/ai%20assisted-cursor-blue.svg)](https://github.com/inventwo/ioBroker.foxesscloud/tree/main/.cursor/iobroker-adapter.mdc)
 
 [![Paypal Donation](https://img.shields.io/badge/paypal-donate%20|%20spenden-green.svg)](https://www.paypal.com/donate/?hosted_button_id=7W6M3TFZ4W9LW)
 
@@ -213,6 +213,9 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
+
 ### 0.6.1 (2026-05-29)
 - (skvarel) Revised config and i18n
 

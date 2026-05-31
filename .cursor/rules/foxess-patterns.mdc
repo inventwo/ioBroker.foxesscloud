@@ -1,0 +1,56 @@
+---
+description: FoxESS Cloud API and adapter-specific patterns
+globs: main.js,tools/**,docs/**
+alwaysApply: false
+---
+
+# FoxESS Cloud Patterns
+
+## Architecture
+
+- `main.js` — single file; entire adapter logic (no `lib/` submodules)
+- Class: `Foxesscloud extends utils.Adapter`
+- No separate connector classes; API calls directly in adapter class
+
+## API communication
+
+- Base URL: `https://www.foxesscloud.com/`
+- Auth headers: `token` (API key) + `signature` (MD5 hash) + `timestamp`
+- **Critical:** signature uses **literal** `\r\n` strings (not real line breaks):
+
+```javascript
+const signatureString = `${path}\\r\\n${token}\\r\\n${milliseconds}`;
+const signature = crypto.createHash('md5').update(signatureString).digest('hex');
+```
+
+## Endpoints
+
+| Method | Path | Purpose |
+|--------|------|---------|
+| POST | `/op/v1/device/real/query` | Real-time data — preferred; `{ sns[], variables[] }` (up to 50 SNs) |
+| POST | `/op/v0/device/real/query` | Real-time data — deprecated; `{ sn, variables[] }` |
+| POST | `/op/v0/device/list` | All inverters (paginated) |
+| GET | `/op/v0/device/variable/get` | All variables with names and units |
+| GET | `/op/v0/user/getAccessCount` | Rate limit (total + remaining) |
+
+~50–65 real-time variables per inverter depending on model.
+
+## Polling
+
+- Start in `onReady()` via `this.setInterval()`; store handle in `this.updateInterval`
+- Stop in `onUnload()` with `this.clearInterval(this.updateInterval)`
+- Interval from config: `this.config.interval` (seconds, minimum 60)
+
+## State naming
+
+- Current: flat hierarchy under adapter instance (e.g. `foxesscloud.0.pvPower`)
+- Planned (multi-device): device folder by serial number (e.g. `foxesscloud.0.<deviceSN>.pvPower`)
+- Info state: `info.connection` (true = connected, false = error/disconnected)
+- Variable names follow FoxESS API (camelCase): `pvPower`, `SoC`, `generationPower`, etc.
+
+## Pitfalls
+
+- Do not use axios or other HTTP libraries — stick to `node:https`
+- Do not forget signature `\r\n` escaping
+- Always clear poll interval in `onUnload`
+- Respect API rate limits; check `getAccessCount` when debugging

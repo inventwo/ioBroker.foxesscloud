@@ -1,0 +1,56 @@
+---
+description: ioBroker adapter code quality and JavaScript conventions
+globs: main.js,tools/**,eslint.config.mjs,prettier.config.mjs
+alwaysApply: false
+---
+
+# Code Quality
+
+## Style
+
+- async/await for asynchronous operations
+- JSDoc on public methods
+- Use `this.log.*` — never `console.log`
+- Tabs, double quotes (see `prettier.config.mjs`)
+- ESLint via `@iobroker/eslint-config` — run `npm run lint` after every change
+
+## Resource cleanup
+
+Use adapter-core interval helpers; clear in `onUnload()` and always call `callback()`:
+
+```javascript
+onReady() {
+  this.updateInterval = this.setInterval(() => this.poll(), this.config.interval * 1000);
+}
+
+onUnload(callback) {
+  try {
+    if (this.updateInterval) {
+      this.clearInterval(this.updateInterval);
+      this.updateInterval = undefined;
+    }
+    callback();
+  } catch (error) {
+    this.log.error(`Error during unloading: ${error.message}`);
+    callback();
+  }
+}
+```
+
+## Error handling
+
+- Wrap async/API work in try/catch; log errors, do not crash the adapter
+- Use adapter log levels: error, warn, info, debug
+- Handle network failures gracefully; set `info.connection` state accordingly
+
+## HTTP
+
+- **Preferred:** native `node:https` module (already used in adapter)
+- **Avoid:** axios, request, or other HTTP libraries
+
+## Dependencies
+
+- Use `npm ci` in CI; commit `package-lock.json` with `package.json`
+- Use `@iobroker/adapter-core`; avoid deprecated packages
+- Update dependencies in separate PRs only
+- Prefer built-in Node.js modules where possible
