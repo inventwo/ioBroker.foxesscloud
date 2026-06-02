@@ -1,4 +1,9 @@
 # Older changes
+## 0.4.0 (2026-05-19)
+- (skvarel) Added PV string 1 and string 2 power datapoints (pv1Power, pv2Power)
+- (skvarel) Added battery temperature datapoint (batTemperature)
+- (skvarel) Added inverter running state datapoint (runningState)
+
 ## 0.3.1 (2026-05-19)
 - (skvarel) Adjusted real-time API parsing to keep the typecheck green without changing runtime behavior
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "foxesscloud",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "news": {
+      "0.6.2": {
+        "en": "Documented Open API rate limit (per API key, multiple instances) in README and admin General tab\nMigrated project rules from GitHub Copilot to Cursor rules",
+        "de": "Dokumentierte Open API Rate Limit (pro API-Schlüssel, mehrere Instanzen) in README und admin General Tab\nGeförderte Projektregeln von GitHub Copilot zu Cursor-Regeln",
+        "ru": "Задокументированный лимит скорости Open API (на ключ API, несколько экземпляров) в вкладке README и admin General\nМиграционные правила проекта от GitHub Copilot до Cursor",
+        "pt": "Documentado Open API rate limit (por chave de API, várias instâncias) em README e admin\nRegras de projeto modificadas do Copiloto GitHub para as regras do Cursor",
+        "nl": "Gedocumenteerd Open API tarieflimiet (per API-sleutel, meerdere gevallen) in README en admin Algemeen tabblad\nMigrated project regels van GitHub Copilot naar Cursor regels",
+        "fr": "Documenté Ouvrir la limite de taux d'API (par clé d'API, plusieurs instances) dans README et l'onglet général d'administration\nRègles de projet modifiées du copilote GitHub aux règles Cursor",
+        "it": "Limite di frequenza API aperta (per chiave API, istanze multiple) nella scheda README e admin\nRegole di progetto migrate da GitHub Copilot a regole Cursor",
+        "es": "Limite de tasa de API abierta documentado (por clave de API, múltiples instancias) en la pestaña README y admin General\nMigrated project rules from GitHub Copilot to Cursor rules",
+        "pl": "Documented Open API rate limit (na klucz API, wiele instancji) w zakładce README i admin General\nMigrowane zasady projektu z GitHub Copilot do zasad kursora",
+        "uk": "Документований ліміт швидкості відкритого API (для ключа API, кількох екземплярів) у вкладці README та адміністратора\nМиттєві правила проекту від GitHub Copilot до правил Cursor",
+        "zh-cn": "在 README 和 admin General 标签中记录了打开 API 速率限制( 按 API 键, 多例)\n从 GitHub 副驾驶到光标规则"
+      },
       "0.6.1": {
         "en": "Revised config and i18n",
         "de": "Überarbeitetes Config und i18n",
@@ -80,19 +93,6 @@
         "pl": "Skorygowana real- time API parsing zachować zieleń typechell bez zmiany zachowania runtime",
         "uk": "Регульований в режимі реального часу API, щоб зберегти вигляд зелений без зміни поведінки",
         "zh-cn": "调整实时 API 解析以保持类型检查绿色而不改变运行时间行为"
-      },
-      "0.3.0": {
-        "en": "Added inverter internal temperature datapoint in °C",
-        "de": "Inverter interner Temperaturdatenpunkt in °C hinzugefügt",
-        "ru": "Добавлен инвертор внутренней температуры точки данных в °C",
-        "pt": "Ponto de dados interno de temperatura do inversor adicionado em °C",
-        "nl": "Toegevoegd omvormer interne temperatuur datapoint in °C",
-        "fr": "Ajout du point de données de température interne de l'onduleur en °C",
-        "it": "Aggiunto inverter temperatura interna datapoint in °C",
-        "es": "Añadido inversor de datos de temperatura interna en °C",
-        "pl": "Dodano inwerter wewnętrzny punkt temperatury w °C",
-        "uk": "Додано інверторну внутрішню температуру точки в °C",
-        "zh-cn": "°C中增加的反转内温数据点"
       }
     },
     "titleLang": {

@@ -227,7 +227,7 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.6.2 (2026-06-02)
 - (skvarel) Documented Open API rate limit (per API key, multiple instances) in README and admin General tab
 - (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
 
@@ -249,11 +249,6 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 
 ### 0.5.0 (2026-05-23)
 - (skvarel) Added PV Power JSON statistics (daily, weekly, monthly) for VIS widget integration with optional cost calculation per kWh
-
-### 0.4.0 (2026-05-19)
-- (skvarel) Added PV string 1 and string 2 power datapoints (pv1Power, pv2Power)
-- (skvarel) Added battery temperature datapoint (batTemperature)
-- (skvarel) Added inverter running state datapoint (runningState)
 
 ## Older changes
 - [CHANGELOG_OLD.md](CHANGELOG_OLD.md)
