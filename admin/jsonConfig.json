@@ -43,7 +43,7 @@
                     "md": 12,
                     "lg": 12,
                     "xl": 12,
-                    "help": "Update interval in seconds (Recommended: 60, Minimum: 60, API limit: 1440 calls/day)"
+                    "help": "interval_help"
                 },
                 "_infoBox1": {
                     "type": "staticText",
@@ -57,6 +57,24 @@
                         "fontSize": "0.875rem",
                         "whiteSpace": "pre-wrap",
                         "marginTop": "20px",
+                        "padding": "10px 14px",
+                        "border": "1px solid #546e7a",
+                        "borderRadius": "6px",
+                        "backgroundColor": "rgba(84, 110, 122, 0.12)"
+                    }
+                },
+                "_apiLimitInfo": {
+                    "type": "staticText",
+                    "text": "api_limit_info_text",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "style": {
+                        "fontSize": "0.875rem",
+                        "whiteSpace": "pre-wrap",
+                        "marginTop": "12px",
                         "padding": "10px 14px",
                         "border": "1px solid #546e7a",
                         "borderRadius": "6px",

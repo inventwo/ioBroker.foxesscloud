@@ -57,7 +57,21 @@ When enabled in the *Reporting* tab, the adapter derives period totals from the 
 ### PV Power JSON Statistics (optional)
 When enabled in the *Statistics* tab, the adapter tracks accumulated PV energy and publishes JSON tables for use in VIS dashboards — see [PV Power JSON Statistics for VIS Dashboards](#pv-power-json-statistics-for-vis-dashboards) below.
 
-**API Rate Limit**: The FoxESS Cloud API allows **1440 calls per day**. With an interval of 60 seconds, this limit is perfectly utilized (1440 minutes = 24 hours).
+### API rate limit (Open API)
+
+The [FoxESS Open API](https://www.foxesscloud.com/public/i18n/en/OpenApiDocument.html) allows **1440 calls per day per API key** (not per adapter instance). Usage in the FoxESS **app** or **web portal** does not count toward this Open API quota.
+
+| Setup | API calls per day (24 h) |
+|-------|--------------------------|
+| 1 instance @ 60 s interval | 1440 (full quota) |
+| 2 instances @ 60 s (same API key) | ~2880 → limit often exceeded after ~12 h |
+| 1 instance @ 120 s interval | 720 |
+
+With the recommended **60 s** interval, a single instance uses the full daily quota (1440 minutes = 24 hours).
+
+**Important:** All Open API clients sharing the same API key share one quota — for example multiple ioBroker instances, Home Assistant integrations, or scripts. Exceeding the limit can cause intermittent API errors (e.g. `40400`, `40402`). Check remaining calls in the FoxESS portal under **Profile → API Management**.
+
+For additional inverters, create one adapter instance per device (one serial number per instance) and plan the poll interval accordingly, or use separate API keys if your account allows it.
 
 ## Data Points
 
@@ -214,6 +228,7 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (skvarel) Documented Open API rate limit (per API key, multiple instances) in README and admin General tab
 - (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
 
 ### 0.6.1 (2026-05-29)
