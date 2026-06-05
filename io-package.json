@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "foxesscloud",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "news": {
+      "0.6.3": {
+        "en": "Fixed repository checker error E0036",
+        "de": "Fixed Repository Checker Fehler E0036",
+        "ru": "Ошибка проверки хранилища E0036",
+        "pt": "Erro de verificação do repositório fixo E0036",
+        "nl": "Fout in vaste repository-checker E0036",
+        "fr": "Erreur de vérification du dépôt fixe E0036",
+        "it": "Risolto errore di controllo repository E0036",
+        "es": "Error del repositorio fijo E0036",
+        "pl": "Błąd sprawdzania repozytorium stałe E0036",
+        "uk": "Виправлено помилку репозиторійного чекера E0036",
+        "zh-cn": "固定仓库检查器错误 E0036"
+      },
       "0.6.2": {
         "en": "Documented Open API rate limit (per API key, multiple instances) in README and admin General tab\nMigrated project rules from GitHub Copilot to Cursor rules",
         "de": "Dokumentierte Open API Rate Limit (pro API-Schlüssel, mehrere Instanzen) in README und admin General Tab\nGeförderte Projektregeln von GitHub Copilot zu Cursor-Regeln",
@@ -80,19 +93,6 @@
         "pl": "Dodano łańcuch fotowoltaiczny 1 i 2 punkty zasilania (pv1Power, pv2Power)\nDodano punkt danych temperatury baterii (batTemperatura)\nDodano inverter running state datapoint (runningState)",
         "uk": "Додано ПВ рядок 1 і рядок 2 точки живлення (pv1Power, pv2Power)\nДодано температуру акумулятора (batTemperature)\nДодано інвертор, що працює державною міткою (runningState)",
         "zh-cn": "添加光电字符串 1 和字符串 2 功率数据点( pv1Power, pv2Power)\n添加电池温度数据点(电池温度)\n添加的反转运行状态数据点( 运行状态)"
-      },
-      "0.3.1": {
-        "en": "Adjusted real-time API parsing to keep the typecheck green without changing runtime behavior",
-        "de": "Anpassung der Echtzeit-API-Pasing, um den Typcheck grün zu halten, ohne das Laufzeitverhalten zu ändern",
-        "ru": "Скорректированный анализ API в реальном времени, чтобы сохранить зеленую проверку типа без изменения поведения во время выполнения",
-        "pt": "Processamento de API em tempo real ajustado para manter o typecheck verde sem alterar o comportamento em tempo de execução",
-        "nl": "Aangepast real-time API ontleden om de typecheck groen te houden zonder verandering van runtime gedrag",
-        "fr": "Ajusté l'analyse de l'API en temps réel pour garder le typecheck vert sans modifier le comportement d'exécution",
-        "it": "Parasing API in tempo reale regolato per mantenere il tipocheck verde senza cambiare il comportamento runtime",
-        "es": "Ajuste de API en tiempo real paresing para mantener el tipocheck verde sin cambiar el comportamiento de tiempo de ejecución",
-        "pl": "Skorygowana real- time API parsing zachować zieleń typechell bez zmiany zachowania runtime",
-        "uk": "Регульований в режимі реального часу API, щоб зберегти вигляд зелений без зміни поведінки",
-        "zh-cn": "调整实时 API 解析以保持类型检查绿色而不改变运行时间行为"
       }
     },
     "titleLang": {
