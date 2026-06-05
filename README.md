@@ -227,6 +227,9 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (skvarel) Fixed repository checker error E0036
+
 ### 0.6.2 (2026-06-02)
 - (skvarel) Documented Open API rate limit (per API key, multiple instances) in README and admin General tab
 - (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
