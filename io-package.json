@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "foxesscloud",
-    "version": "0.6.3",
+    "version": "0.6.4",
     "news": {
+      "0.6.4": {
+        "en": "Added meta object types for adapter and instance namespace",
+        "de": "Meta-Objekttypen für Adapter und Instanz-Namespace hinzugefügt",
+        "ru": "Добавлены типы метаобъектов для адаптера и пространства имен экземпляров",
+        "pt": "Tipos de meta- objecto adicionados para o espaço de nomes do adaptador e da instância",
+        "nl": "Toegevoegd meta-objecttypes voor adapter en instance namespace",
+        "fr": "Ajout de types d'objets méta pour l'adaptateur et l'espace de noms d'instance",
+        "it": "Aggiunti i tipi di meta oggetto per adattatore e namespace di istanza",
+        "es": "Se agregaron tipos de objetos meta para el adaptador y el espacio de nombres de instancia",
+        "pl": "Dodano typy metaobiektów dla adaptera i instancji przestrzeni nazw",
+        "uk": "Додано типи об'єктів метаданих для перетворення та простору імен",
+        "zh-cn": "添加适配器和实例命名空间的元对象类型"
+      },
       "0.6.3": {
         "en": "Fixed repository checker error E0036",
         "de": "Fixed Repository Checker Fehler E0036",
@@ -80,19 +93,6 @@
         "pl": "Dodano statystyki JSON energii fotowoltaicznej (codziennie, co tydzień, co miesiąc) dla integracji widżetów VIS z opcjonalnymi kalkulacjami kosztów na kWh",
         "uk": "Додана статистика PV Power JSON (щотижневий, щомісячний) для інтеграції віджетів VIS з додатковою вартістю розрахунку на кВт•год",
         "zh-cn": "增加电源JSON统计数据(每日、每周、每月),用于VIS部件集成,每千瓦小时可选成本计算"
-      },
-      "0.4.0": {
-        "en": "Added PV string 1 and string 2 power datapoints (pv1Power, pv2Power)\nAdded battery temperature datapoint (batTemperature)\nAdded inverter running state datapoint (runningState)",
-        "de": "Hinzugefügt PV-String 1 und String 2 Leistungsdatenpunkte (pv1Power, pv2Power)\nHinzugefügt Batterietemperatur-Datenpunkt (batTemperature)\nHinzugefügt Inverter-Laufzustandsdatenpunkt (runningState)",
-        "ru": "Добавлены PV строки 1 и строки 2 мощности точек данных (pv1Power, pv2Power)\nДобавлена температура батареи (температура батареи)\nДобавлен инвертор, работающий в точке данных состояния (runningState)",
-        "pt": "Adicionado PV string 1 e string 2 power datapoints (pv1Power, pv2Power)\nPonto de dados de temperatura da bateria adicionado (batTemperature)\nPonto de dados do estado de execução do inversor adicionado (em execuçãoState)",
-        "nl": "Toegevoegd PV string 1 en string 2 power datapoints (pv1Power, pv2Power)\nToegevoegd batterij temperatuur datapoint (batTemperature)\nToegevoegd omvormer draaiende state datapoint (runningState)",
-        "fr": "Ajout des points de données PV 1 et 2 (pv1Power, pv2Power)\nAjout des données de température de la batterie (batTemperature)\nAjout du point de données d'état d'exécution de l'onduleur (état d'exécution)",
-        "it": "Aggiunti fotovoltaici 1 e stringa 2 datapoint di potenza (pv1Power, pv2Power)\nDatapoint di temperatura della batteria aggiunto (batTemperature)\nAggiunto inverter in esecuzione datapoint stato (runningState)",
-        "es": "Añadido cadena PV 1 y cadena 2 puntos de datos de potencia (pv1Power, pv2Power)\nPunto de datos de temperatura de la batería (batTemperature)\nAñadido inverter running state datapoint (runningState)",
-        "pl": "Dodano łańcuch fotowoltaiczny 1 i 2 punkty zasilania (pv1Power, pv2Power)\nDodano punkt danych temperatury baterii (batTemperatura)\nDodano inverter running state datapoint (runningState)",
-        "uk": "Додано ПВ рядок 1 і рядок 2 точки живлення (pv1Power, pv2Power)\nДодано температуру акумулятора (batTemperature)\nДодано інвертор, що працює державною міткою (runningState)",
-        "zh-cn": "添加光电字符串 1 和字符串 2 功率数据点( pv1Power, pv2Power)\n添加电池温度数据点(电池温度)\n添加的反转运行状态数据点( 运行状态)"
       }
     },
     "titleLang": {

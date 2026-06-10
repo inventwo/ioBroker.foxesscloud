@@ -227,7 +227,7 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.6.4 (2026-06-10)
 - (skvarel) Added meta object types for adapter and instance namespace
 
 ### 0.6.3 (2026-06-05)
@@ -248,10 +248,6 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 - (StephanBeutel) Centralized all state name translations into a single STATE_NAMES constant
 - (skvarel) Fixed report states not updating during current period (values were only written at period rollover)
 - (skvarel) Made energy reporting configurable via a new Reporting tab in the admin UI
-
-### 0.5.1 (2026-05-25)
-- (skvarel) Replaced process.env and process.exit usage in tools/api-test.js to fix compatibility issues reported by ioBroker repository checker (E5049, E5050)
-- (skvarel) Downgraded @types/node from ^25 to ^22 to match supported Node.js version (W0066)
 
 ## Older changes
 - [CHANGELOG_OLD.md](CHANGELOG_OLD.md)

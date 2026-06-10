@@ -1,4 +1,8 @@
 # Older changes
+## 0.5.1 (2026-05-25)
+- (skvarel) Replaced process.env and process.exit usage in tools/api-test.js to fix compatibility issues reported by ioBroker repository checker (E5049, E5050)
+- (skvarel) Downgraded @types/node from ^25 to ^22 to match supported Node.js version (W0066)
+
 ## 0.5.0 (2026-05-23)
 - (skvarel) Added PV Power JSON statistics (daily, weekly, monthly) for VIS widget integration with optional cost calculation per kWh
 
