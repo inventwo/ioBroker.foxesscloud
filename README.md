@@ -227,6 +227,9 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (skvarel) Added meta object types for adapter and instance namespace
+
 ### 0.6.3 (2026-06-05)
 - (skvarel) Fixed repository checker error E0036
 

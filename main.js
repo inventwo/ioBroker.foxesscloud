@@ -7,6 +7,7 @@
 const utils = require("@iobroker/adapter-core");
 const https = require("node:https");
 const crypto = require("node:crypto");
+const ioPack = require("./io-package.json");
 
 const STATE_NAMES = {
 	// --- Real-time power states ---
@@ -428,6 +429,34 @@ class Foxesscloud extends utils.Adapter {
 	}
 
 	/**
+	 * Ensure the adapter root object (foxesscloud) is typed as meta.folder.
+	 * Must be done at runtime — objects with _id "" in io-package.json causes Invalid ID on update.
+	 */
+	async ensureAdapterRootMeta() {
+		const rootId = this.name;
+		const titleLang = ioPack.common?.titleLang || {};
+		const lang = this.systemLanguage || "en";
+		const metaObject = {
+			type: "meta",
+			common: {
+				name: titleLang[lang] || titleLang.en || rootId,
+				type: "meta.folder",
+			},
+			native: {},
+		};
+
+		const existing = await this.getForeignObjectAsync(rootId);
+		if (!existing) {
+			await this.setForeignObjectAsync(rootId, metaObject);
+		} else if (existing.type !== "meta") {
+			await this.extendForeignObjectAsync(rootId, {
+				type: "meta",
+				common: metaObject.common,
+			});
+		}
+	}
+
+	/**
 	 * Is called when databases are connected and adapter received configuration.
 	 */
 	async onReady() {
@@ -457,6 +486,8 @@ class Foxesscloud extends utils.Adapter {
 				`Could not read system language from system.config: ${error instanceof Error ? error.message : String(error)}`,
 			);
 		}
+
+		await this.ensureAdapterRootMeta();
 
 		// Create states
 		await this.createStates();
