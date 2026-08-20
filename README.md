@@ -227,6 +227,9 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (skvarel) Fixed repository checker warnings W9008 by aligning .gitignore with tracked test, .env.example and .vscode/settings.json files
+
 ### 0.6.4 (2026-06-10)
 - (skvarel) Added meta object types for adapter and instance namespace
 

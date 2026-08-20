@@ -59,7 +59,6 @@ typings/
 
 # dotenv environment variables file
 .env
-.env.example
 
 # API test credentials (contains sensitive data)
 tools/credentials.json
@@ -69,7 +68,8 @@ tools/credentials.json
 
 # ioBroker specific
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
 *.code-workspace
 nbproject/
 
@@ -80,9 +80,6 @@ admin/src/build/
 
 # Dev-Server
 .dev-server/
-
-# Test files
-test/
 
 # i18n intermediate files
 admin/i18n/flat.txt
