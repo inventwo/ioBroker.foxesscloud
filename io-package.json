@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "foxesscloud",
-    "version": "0.6.4",
+    "version": "0.6.5",
     "news": {
+      "0.6.5": {
+        "en": "Fixed repository checker warnings W9008 by aligning .gitignore with tracked test, .env.example and .vscode/settings.json files",
+        "de": "Die Warnung W9008 des Repository-Checkers wurde behoben, indem die .gitignore-Datei mit den verfolgten Dateien test, .env.example und .vscode/settings.json abgeglichen wurde.",
+        "ru": "Исправлены предупреждения проверки репозитория W9008 путем приведения файла .gitignore в соответствие с отслеживаемыми файлами test, .env.example и .vscode/settings.json.",
+        "pt": "Corrigido o aviso W9008 do verificador de repositório, alinhando o arquivo .gitignore com os arquivos de teste rastreados, .env.example e .vscode/settings.json.",
+        "nl": "De waarschuwingen W9008 van de repositorychecker zijn verholpen door het .gitignore-bestand af te stemmen op de bestanden voor bijgehouden tests, .env.example en .vscode/settings.json.",
+        "fr": "Correction de l'avertissement W9008 du vérificateur de dépôt grâce à l'alignement du fichier .gitignore avec les fichiers de test, .env.example et .vscode/settings.json suivis.",
+        "it": "Risolto l'avviso W9008 del controllo del repository allineando il file .gitignore con i file di test, .env.example e .vscode/settings.json tracciati.",
+        "es": "Se corrigieron las advertencias del verificador de repositorio W9008 alineando .gitignore con los archivos de prueba rastreados, .env.example y .vscode/settings.json.",
+        "pl": "Naprawiono ostrzeżenia modułu sprawdzającego repozytorium W9008 poprzez dopasowanie pliku .gitignore do śledzonych plików testowych, .env.example i .vscode/settings.json",
+        "uk": "Виправлено попередження перевірки репозиторію W9008 шляхом вирівнювання .gitignore з файлами tracked test, .env.example та .vscode/settings.json",
+        "zh-cn": "通过将 .gitignore 文件与跟踪的测试文件、.env.example 文件和 .vscode/settings.json 文件对齐，修复了仓库检查器警告 W9008。"
+      },
       "0.6.4": {
         "en": "Added meta object types for adapter and instance namespace",
         "de": "Meta-Objekttypen für Adapter und Instanz-Namespace hinzugefügt",
@@ -80,19 +93,6 @@
         "pl": "Zastąpione użycie process.env i process.exit w narzędziach / api- test.js w celu ustalenia problemów z kompatybilnością zgłaszanych przez sprawdzacz repozytorium jOBroker (E5049, E5050)\nSkrócony @ types / node od ^ 25 do ^ 22 do dopasowania obsługiwanej wersji Node.js (W0066)",
         "uk": "Замінний процес.env і process.exit використання в інструментах /api-test.js для фіксації проблем сумісності, які повідомляються репозиторійним чекером ioBroker (E5049, E5050)\nDowngraded @types/node від ^25 до ^22, щоб відповідати підтримкою Node.js версії (W0066)",
         "zh-cn": "替换 process.env 和 process.exit 工具/api-test.js 用于解决 ioBroker 寄存器检查器报告的兼容性问题(E5049, E5050)\n从 ^25 降级到 ^22 的@types/node 以匹配支持的 Node.js 版本 (W0066)"
-      },
-      "0.5.0": {
-        "en": "Added PV Power JSON statistics (daily, weekly, monthly) for VIS widget integration with optional cost calculation per kWh",
-        "de": "Hinzugefügt PV Power JSON Statistiken (täglich, wöchentlich, monatlich) für VIS Widget Integration mit optionaler Kostenberechnung pro kWh",
-        "ru": "Добавлена статистика PV Power JSON (ежедневная, еженедельная, ежемесячная) для интеграции виджета VIS с дополнительным расчетом стоимости за кВтч",
-        "pt": "Adicionado PV Power JSON estatísticas (diária, semanal, mensal) para integração widget VIS com cálculo de custo opcional por kWh",
-        "nl": "Toegevoegd PV Power JSON statistieken (dagelijks, wekelijks, maandelijks) voor VIS widget integratie met optionele kostenberekening per kWh",
-        "fr": "Ajout de statistiques PV Power JSON (quotidienne, hebdomadaire, mensuelle) pour l'intégration des widgets VIS avec calcul du coût optionnel par kWh",
-        "it": "Statistiche di PV Power JSON (daily, settimanale, mensile) per l'integrazione dei widget VIS con calcolo opzionale dei costi per kWh",
-        "es": "Añadido PV Power JSON estadística (diario, semanal, mensual) para la integración del widget VIS con cálculo de coste opcional por kWh",
-        "pl": "Dodano statystyki JSON energii fotowoltaicznej (codziennie, co tydzień, co miesiąc) dla integracji widżetów VIS z opcjonalnymi kalkulacjami kosztów na kWh",
-        "uk": "Додана статистика PV Power JSON (щотижневий, щомісячний) для інтеграції віджетів VIS з додатковою вартістю розрахунку на кВт•год",
-        "zh-cn": "增加电源JSON统计数据(每日、每周、每月),用于VIS部件集成,每千瓦小时可选成本计算"
       }
     },
     "titleLang": {
