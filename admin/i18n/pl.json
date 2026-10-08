@@ -25,6 +25,8 @@
     "Update Interval (seconds)": "Interwał aktualizacji (sekundy)",
     "Weekly start value (kWh)": "Tygodniowa wartość początkowa (kWh)",
     "Weekly statistics": "Tygodniowe statystyki",
+    "api_key_help_text": "Jak zdobyć klucz API:\n1. Otwórz platformę FoxCloud OpenPlatform (przycisk poniżej) i zaloguj się na swoje konto FoxESS\n2. Na pasku bocznym otwórz Klucze API\n3. Kliknij + Wygeneruj klucz (jeśli nie masz jeszcze aktywnego klucza), a następnie Kopiuj\n\nUwaga: jeden aktywny klucz API na konto. Istniejące klucze zachowują ważność. Stary profil ścieżki w chmurze FoxESS → Zarządzanie API przekierowuje tylko tutaj i nie tworzy już kluczy.",
+    "api_key_link_label": "Otwórz otwartą platformę FoxCloud",
     "api_limit_info_text": "Limit otwartego API: 1440 wywołań dziennie na klucz API (nie na instancję adaptera). Korzystanie z aplikacji i portali internetowych nie wlicza się do tego limitu.\n\nW odstępie 60 s jedna instancja wykorzystuje cały limit dzienny. Dwie instancje (lub ten sam klucz API w Home Assistant, skryptach itp.) w wieku 60 lat wymagają mniej więcej dwukrotnie większej liczby wywołań — limit często jest osiągany po około 12 godzinach, co może powodować sporadyczne błędy API (np. 40400/40402).\n\nSprawdź pozostały limit w portalu FoxESS w zakładce Profil → Zarządzanie API.",
     "enable_reporting_help": "Oblicz dzienne, tygodniowe, miesięczne i roczne sumy energii dla wytwarzania, dostarczania i zużycia sieci. Wartości pochodzą z liczników czasu istnienia udostępnianych przez API FoxESS.",
     "extended_statistics_info_text": "Sumy (dzień/tydzień/miesiąc) są zapisywane automatycznie po każdym odpytywaniu i przywracane po ponownym uruchomieniu adaptera – nie ma potrzeby ręcznego czyszczenia ani dostosowywania wartości początkowych w konfiguracji. Wartości początkowe w konfiguracji są stosowane tylko przy pierwszym uruchomieniu tej instancji. W przypadku długoterminowych danych historycznych należy skorzystać z pliku iobroker.history lub iobroker.influxdb.",
@@ -36,5 +38,6 @@
     "start_value_weekly_help": "Opcjonalna wartość początkowa na bieżący tydzień – stosowana tylko przy pierwszym uruchomieniu tej instancji. Następnie sumy są zapisywane automatycznie i przywracane po każdym ponownym uruchomieniu.",
     "tab_general": "Ogólny",
     "tab_reporting": "Raportowanie",
-    "tab_statistics": "Statystyka"
+    "tab_statistics": "Statystyka",
+    "token_help": "Klucz API z FoxCloud OpenPlatform — zobacz pomoc poniżej"
 }

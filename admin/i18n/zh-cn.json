@@ -25,6 +25,8 @@
     "Update Interval (seconds)": "更新间隔（秒）",
     "Weekly start value (kWh)": "每周起始值（kWh）",
     "Weekly statistics": "每周统计",
+    "api_key_help_text": "如何获取您的 API 密钥：\n1. 打开 FoxCloud OpenPlatform（下方按钮）并使用您的 FoxESS 帐户登录\n2. 在侧边栏中，打开 API 密钥\n3. 单击 + 生成密钥（如果您还没有活动密钥），然后单击复制\n\n注意：每个帐户一个有效的 API 密钥。现有密钥仍然有效。旧的 FoxESS Cloud 路径 Profile → API Management 仅重定向到此处，不再创建密钥。",
+    "api_key_link_label": "打开狐云开放平台",
     "api_limit_info_text": "开放 API 限制：每个 API 密钥每天 1440 次调用（不是每个适配器实例）。应用程序和门户网站的使用不计入此限制。\n\n每隔 60 秒，一个实例就会使用完整的每日配额。 60 秒的两个实例（或 Home Assistant、脚本等中的相同 API 密钥）大约需要两倍的调用次数 - 通常在大约 12 小时后达到限制，这可能会导致间歇性 API 错误（例如 40400/40402）。\n\n在 FoxESS 门户中的“配置文件”→“API 管理”下检查剩余配额。",
     "enable_reporting_help": "计算每日、每周、每月和每年的发电、馈入和电网消耗的能源总量。值源自 FoxESS API 提供的生命周期计数器。",
     "extended_statistics_info_text": "每次轮询后都会自动保存总计（日/周/月），并在适配器重新启动时恢复 – 无需手动清除或调整配置中的起始值。配置中的起始值仅应用于此实例的第一次启动。对于长期历史数据，请使用iobroker.history或iobroker.influxdb。",
@@ -36,5 +38,6 @@
     "start_value_weekly_help": "本周的可选起始值 – 仅应用于此实例的第一次启动。此后，总计会自动保存并在每次重新启动后恢复。",
     "tab_general": "一般的",
     "tab_reporting": "报告",
-    "tab_statistics": "统计数据"
+    "tab_statistics": "统计数据",
+    "token_help": "来自 FoxCloud OpenPlatform 的 API 密钥 — 请参阅下面的帮助"
 }

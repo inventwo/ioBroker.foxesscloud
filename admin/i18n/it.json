@@ -25,6 +25,8 @@
     "Update Interval (seconds)": "Intervallo di aggiornamento (secondi)",
     "Weekly start value (kWh)": "Valore iniziale settimanale (kWh)",
     "Weekly statistics": "Statistiche settimanali",
+    "api_key_help_text": "Come ottenere la chiave API:\n1. Apri FoxCloud OpenPlatform (pulsante sotto) e accedi con il tuo account FoxESS\n2. Nella barra laterale, apri Chiavi API\n3. Fare clic su + Genera chiave (se non si dispone ancora di una chiave attiva), quindi su Copia\n\nNota: una chiave API attiva per account. Le chiavi esistenti rimangono valide. Il vecchio percorso FoxESS Cloud Profilo → Gestione API reindirizza solo qui e non crea più chiavi.",
+    "api_key_link_label": "Apri FoxCloud OpenPlatform",
     "api_limit_info_text": "Limite API aperte: 1440 chiamate al giorno per chiave API (non per istanza dell'adattatore). L'utilizzo dell'app e del portale Web non viene conteggiato ai fini di questo limite.\n\nA intervalli di 60 s, un'istanza utilizza l'intera quota giornaliera. Due istanze (o la stessa chiave API in Home Assistant, script, ecc.) a 60 secondi richiedono circa il doppio delle chiamate: il limite viene spesso raggiunto dopo circa 12 ore, il che può causare errori API intermittenti (ad esempio 40400/40402).\n\nControlla la quota rimanente nel portale FoxESS in Profilo → Gestione API.",
     "enable_reporting_help": "Calcola i totali energetici giornalieri, settimanali, mensili e annuali per la generazione, l'immissione in rete e il consumo di rete. I valori derivano dai contatori della durata forniti dall'API FoxESS.",
     "extended_statistics_info_text": "I totali (giorno/settimana/mese) vengono salvati automaticamente dopo ogni sondaggio e ripristinati al riavvio dell'adattatore: non è necessario cancellare o regolare manualmente i valori iniziali nella configurazione. I valori iniziali nella configurazione vengono applicati solo al primo avvio di questa istanza. Per i dati storici a lungo termine, utilizzare iobroker.history o iobroker.influxdb.",
@@ -36,5 +38,6 @@
     "start_value_weekly_help": "Valore iniziale facoltativo per la settimana corrente: applicato solo al primo avvio di questa istanza. Successivamente, i totali vengono salvati automaticamente e ripristinati dopo ogni riavvio.",
     "tab_general": "Generale",
     "tab_reporting": "Segnalazione",
-    "tab_statistics": "Statistiche"
+    "tab_statistics": "Statistiche",
+    "token_help": "Chiave API da FoxCloud OpenPlatform: consulta la guida di seguito"
 }

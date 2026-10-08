@@ -25,6 +25,8 @@
     "Update Interval (seconds)": "Intervalo de atualização (segundos)",
     "Weekly start value (kWh)": "Valor inicial semanal (kWh)",
     "Weekly statistics": "Estatísticas semanais",
+    "api_key_help_text": "Como obter sua chave API:\n1. Abra FoxCloud OpenPlatform (botão abaixo) e faça login com sua conta FoxESS\n2. Na barra lateral, abra Chaves API\n3. Clique em + Gerar chave (se você ainda não tiver uma chave ativa) e depois em Copiar\n\nObservação: uma chave de API ativa por conta. As chaves existentes permanecem válidas. O antigo caminho FoxESS Cloud Profile → API Management apenas redireciona aqui e não cria mais chaves.",
+    "api_key_link_label": "Abra FoxCloud OpenPlatform",
     "api_limit_info_text": "Limite de API aberta: 1.440 chamadas por dia por chave de API (não por instância do adaptador). O uso de aplicativos e portais da web não conta para esse limite.\n\nEm um intervalo de 60 segundos, uma instância usa toda a cota diária. Duas instâncias (ou a mesma chave de API no Home Assistant, scripts, etc.) em 60 segundos precisam de aproximadamente o dobro de chamadas - o limite geralmente é atingido após cerca de 12 horas, o que pode causar erros intermitentes de API (por exemplo, 40400/40402).\n\nVerifique a cota restante no portal FoxESS em Perfil → Gerenciamento de API.",
     "enable_reporting_help": "Calcule os totais de energia diários, semanais, mensais e anuais para geração, alimentação e consumo da rede. Os valores são derivados dos contadores de tempo de vida fornecidos pela API FoxESS.",
     "extended_statistics_info_text": "Os totais (dia/semana/mês) são salvos automaticamente após cada pesquisa e restaurados quando o adaptador é reiniciado – não há necessidade de limpar ou ajustar manualmente os valores iniciais na configuração. Os valores iniciais na configuração são aplicados apenas na primeira inicialização desta instância. Para dados históricos de longo prazo, use iobroker.history ou iobroker.influxdb.",
@@ -36,5 +38,6 @@
     "start_value_weekly_help": "Valor inicial opcional para a semana atual – aplicado somente na primeira inicialização desta instância. Posteriormente, os totais são salvos automaticamente e restaurados após cada reinicialização.",
     "tab_general": "Em geral",
     "tab_reporting": "Relatórios",
-    "tab_statistics": "Estatísticas"
+    "tab_statistics": "Estatísticas",
+    "token_help": "Chave de API do FoxCloud OpenPlatform — veja a ajuda abaixo"
 }

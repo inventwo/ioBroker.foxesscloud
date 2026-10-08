@@ -1,6 +1,5 @@
 {
     "API Token": "API Token",
-    "API key from the FoxESS Cloud portal": "API key from the FoxESS Cloud portal",
     "Cost Calculation (Optional)": "Cost Calculation (Optional)",
     "Daily statistics": "Daily statistics",
     "Daily start value (kWh)": "Daily start value (kWh)",
@@ -25,10 +24,12 @@
     "Update Interval (seconds)": "Update Interval (seconds)",
     "Weekly start value (kWh)": "Weekly start value (kWh)",
     "Weekly statistics": "Weekly statistics",
-    "api_limit_info_text": "Open API limit: 1440 calls per day per API key (not per adapter instance). App and web portal usage do not count toward this limit.\n\nAt a 60 s interval, one instance uses the full daily quota. Two instances (or the same API key in Home Assistant, scripts, etc.) at 60 s need roughly twice as many calls — the limit is often reached after about 12 hours, which can cause intermittent API errors (e.g. 40400/40402).\n\nCheck remaining quota in the FoxESS portal under Profile → API Management.",
+    "api_key_help_text": "How to get your API key:\n1. Open FoxCloud OpenPlatform (button below) and sign in with your FoxESS account\n2. In the sidebar, open API Keys\n3. Click + Generate key (if you do not have an active key yet), then Copy\n\nNote: One active API key per account. Existing keys remain valid. The old FoxESS Cloud path Profile → API Management only redirects here and no longer creates keys.",
+    "api_key_link_label": "Open FoxCloud OpenPlatform",
+    "api_limit_info_text": "Open API limit: 1440 calls per day per API key (not per adapter instance). App and web portal usage do not count toward this limit.\n\nAt a 60 s interval, one instance uses the full daily quota. Two instances (or the same API key in Home Assistant, scripts, etc.) at 60 s need roughly twice as many calls — the limit is often reached after about 12 hours, which can cause intermittent API errors (e.g. 40400/40402).\n\nFoxCloud OpenPlatform allows one active API key per account — manage it under API Keys in the OpenPlatform.",
     "enable_reporting_help": "Calculate daily, weekly, monthly and yearly energy totals for generation, feed-in and grid consumption. Values are derived from the lifetime counters provided by the FoxESS API.",
     "extended_statistics_info_text": "Totals (day/week/month) are saved automatically after each poll and restored when the adapter restarts – there is no need to manually clear or adjust the start values in the config. The start values in the config are only applied on the very first start of this instance. For long-term historical data, please use iobroker.history or iobroker.influxdb.",
-    "instance_info_text": "For an additional inverter, please create a new instance. Only one serial number can be specified per instance. If you use multiple instances with the same API key, increase the poll interval or use separate API keys — see the API limit note below.",
+    "instance_info_text": "For an additional inverter, please create a new instance. Only one serial number can be specified per instance. FoxCloud OpenPlatform allows one active API key per account — if you run multiple instances with that key, increase the poll interval so you stay within the daily quota (see the API limit note below).",
     "interval_help": "Update interval in seconds (recommended: 60, minimum: 60). Open API limit: 1440 calls/day per API key — see API limit note below.",
     "reporting_info_text": "Report states are created under report.day.*, report.week.*, report.month.* and report.year.*. The baselines are saved automatically after each poll and restored after every restart – no manual configuration required.",
     "start_value_daily_help": "Optional start value for today – applied only on the very first start of this instance. Afterwards, totals are saved automatically and restored after every restart.",
@@ -36,5 +37,6 @@
     "start_value_weekly_help": "Optional start value for the current week – applied only on the very first start of this instance. Afterwards, totals are saved automatically and restored after every restart.",
     "tab_general": "General",
     "tab_reporting": "Reporting",
-    "tab_statistics": "Statistics"
+    "tab_statistics": "Statistics",
+    "token_help": "API key from FoxCloud OpenPlatform — see help below"
 }

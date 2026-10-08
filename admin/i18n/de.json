@@ -1,6 +1,5 @@
 {
     "API Token": "API-Token",
-    "API key from the FoxESS Cloud portal": "API-Schlüssel vom FoxESS Cloud-Portal",
     "Cost Calculation (Optional)": "Kostenberechnung (Optional)",
     "Daily start value (kWh)": "Startwert Tag (kWh)",
     "Daily statistics": "Tägliche Statistiken",
@@ -25,10 +24,12 @@
     "Update Interval (seconds)": "Aktualisierungsintervall (Sekunden)",
     "Weekly start value (kWh)": "Startwert Woche (kWh)",
     "Weekly statistics": "Woechentliche Statistiken",
-    "api_limit_info_text": "Open-API-Limit: 1440 Aufrufe pro Tag und API-Schlüssel (nicht pro Adapter-Instanz). Nutzung der App und des Webportals zählt nicht zu diesem Limit.\n\nBei 60 s Intervall nutzt eine Instanz das Tageskontingent voll aus. Zwei Instanzen (oder derselbe API-Schlüssel in Home Assistant, Skripten usw.) bei 60 s benötigen etwa doppelt so viele Aufrufe — das Limit ist oft nach etwa 12 Stunden erreicht, was zu intermittierenden API-Fehlern führen kann (z. B. 40400/40402).\n\nVerbleibende Aufrufe im FoxESS-Portal unter Profil → API-Verwaltung prüfen.",
+    "api_key_help_text": "So erhalten Sie Ihren API-Schlüssel:\n1. FoxCloud OpenPlatform öffnen (Button unten) und mit Ihrem FoxESS-Konto anmelden\n2. In der Seitenleiste API Keys öffnen\n3. Auf + Generate key klicken (falls noch kein aktiver Schlüssel vorhanden), dann Copy\n\nHinweis: Ein aktiver API-Schlüssel pro Account. Bestehende Schlüssel bleiben gültig. Der alte Weg im FoxESS-Cloud-Portal (Profil → API-Verwaltung) leitet nur noch weiter und erzeugt keine Schlüssel mehr.",
+    "api_key_link_label": "FoxCloud OpenPlatform öffnen",
+    "api_limit_info_text": "Open-API-Limit: 1440 Aufrufe pro Tag und API-Schlüssel (nicht pro Adapter-Instanz). Nutzung der App und des Webportals zählt nicht zu diesem Limit.\n\nBei 60 s Intervall nutzt eine Instanz das Tageskontingent voll aus. Zwei Instanzen (oder derselbe API-Schlüssel in Home Assistant, Skripten usw.) bei 60 s benötigen etwa doppelt so viele Aufrufe — das Limit ist oft nach etwa 12 Stunden erreicht, was zu intermittierenden API-Fehlern führen kann (z. B. 40400/40402).\n\nFoxCloud OpenPlatform erlaubt einen aktiven API-Schlüssel pro Account — verwalten unter API Keys in der OpenPlatform.",
     "enable_reporting_help": "Berechnet tägliche, wöchentliche, monatliche und jährliche Energiesummen für Erzeugung, Einspeisung und Netzbezug. Die Werte werden aus den Lifetime-Zählern der FoxESS API abgeleitet.",
     "extended_statistics_info_text": "Die Zählerstände (Tag/Woche/Monat) werden nach jedem Abruf automatisch gespeichert und beim Neustart der Instanz wiederhergestellt – ein manueller Rücksetzen der Startwerte in der Config ist nicht nötig. Die Startwerte in der Config werden nur beim allerersten Start der Instanz übernommen. Für historische Langzeitauswertungen bitte iobroker.history oder iobroker.influxdb nutzen.",
-    "instance_info_text": "Für weitere Wechselrichter bitte je Gerät eine eigene Instanz anlegen. Pro Instanz ist nur eine Seriennummer möglich. Bei mehreren Instanzen mit demselben API-Schlüssel das Abfrageintervall erhöhen oder separate API-Schlüssel verwenden — siehe Hinweis zum API-Limit unten.",
+    "instance_info_text": "Für weitere Wechselrichter bitte je Gerät eine eigene Instanz anlegen. Pro Instanz ist nur eine Seriennummer möglich. FoxCloud OpenPlatform erlaubt einen aktiven API-Schlüssel pro Account — bei mehreren Instanzen mit diesem Schlüssel das Abfrageintervall erhöhen, damit das Tageskontingent nicht überschritten wird (siehe Hinweis zum API-Limit unten).",
     "interval_help": "Aktualisierungsintervall in Sekunden (empfohlen: 60, Minimum: 60). Open-API-Limit: 1440 Aufrufe/Tag pro API-Schlüssel — siehe Hinweis zum API-Limit unten.",
     "reporting_info_text": "Die Report-States werden unter report.day.*, report.week.*, report.month.* und report.year.* angelegt. Die Baselines werden nach jedem Abruf automatisch gespeichert und nach jedem Neustart wiederhergestellt – keine manuelle Konfiguration erforderlich.",
     "start_value_daily_help": "Optionaler Startwert für den heutigen Tag – wird nur beim allerersten Start der Instanz übernommen. Danach werden die Zählerstände automatisch gespeichert und nach einem Neustart wiederhergestellt.",
@@ -36,5 +37,6 @@
     "start_value_weekly_help": "Optionaler Startwert für die aktuelle Woche – wird nur beim allerersten Start der Instanz übernommen. Danach werden die Zählerstände automatisch gespeichert und nach einem Neustart wiederhergestellt.",
     "tab_general": "Allgemein",
     "tab_reporting": "Reporting",
-    "tab_statistics": "Statistiken"
+    "tab_statistics": "Statistiken",
+    "token_help": "API-Schlüssel von FoxCloud OpenPlatform — siehe Hilfe unten"
 }

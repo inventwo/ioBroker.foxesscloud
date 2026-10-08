@@ -25,6 +25,8 @@
     "Update Interval (seconds)": "Intervalle de mise à jour (secondes)",
     "Weekly start value (kWh)": "Valeur de départ hebdomadaire (kWh)",
     "Weekly statistics": "Statistiques hebdomadaires",
+    "api_key_help_text": "Comment obtenir votre clé API :\n1. Ouvrez FoxCloud OpenPlatform (bouton ci-dessous) et connectez-vous avec votre compte FoxESS\n2. Dans la barre latérale, ouvrez les clés API\n3. Cliquez sur + Générer une clé (si vous n'avez pas encore de clé active), puis Copier\n\nRemarque : une clé API active par compte. Les clés existantes restent valides. L'ancien profil de chemin FoxESS Cloud → Gestion des API redirige uniquement ici et ne crée plus de clés.",
+    "api_key_link_label": "Ouvrir la plate-forme ouverte FoxCloud",
     "api_limit_info_text": "Limite d'API ouverte : 1 440 appels par jour par clé API (et non par instance d'adaptateur). L'utilisation des applications et du portail Web n'est pas prise en compte dans cette limite.\n\nToutes les 60 s, une instance utilise l'intégralité du quota quotidien. Deux instances (ou la même clé API dans Home Assistant, scripts, etc.) à 60 s nécessitent environ deux fois plus d'appels — la limite est souvent atteinte après environ 12 heures, ce qui peut provoquer des erreurs API intermittentes (par exemple 40400/40402).\n\nVérifiez le quota restant dans le portail FoxESS sous Profil → Gestion des API.",
     "enable_reporting_help": "Calculez les totaux d’énergie quotidiens, hebdomadaires, mensuels et annuels pour la production, l’injection et la consommation du réseau. Les valeurs sont dérivées des compteurs de durée de vie fournis par l'API FoxESS.",
     "extended_statistics_info_text": "Les totaux (jour/semaine/mois) sont enregistrés automatiquement après chaque interrogation et restaurés au redémarrage de l'adaptateur – il n'est pas nécessaire d'effacer ou d'ajuster manuellement les valeurs de départ dans la configuration. Les valeurs de départ dans la configuration ne sont appliquées qu'au tout premier démarrage de cette instance. Pour les données historiques à long terme, veuillez utiliser iobroker.history ou iobroker.influxdb.",
@@ -36,5 +38,6 @@
     "start_value_weekly_help": "Valeur de départ facultative pour la semaine en cours – appliquée uniquement au tout premier démarrage de cette instance. Ensuite, les totaux sont automatiquement enregistrés et restaurés après chaque redémarrage.",
     "tab_general": "Général",
     "tab_reporting": "Rapports",
-    "tab_statistics": "Statistiques"
+    "tab_statistics": "Statistiques",
+    "token_help": "Clé API de FoxCloud OpenPlatform — voir l'aide ci-dessous"
 }

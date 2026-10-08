@@ -30,6 +30,6 @@ When changing `admin/jsonConfig.json`:
 
 ## Config fields
 
-- `token` (password): FoxESS Cloud API key
+- `token` (password): FoxESS API key from FoxCloud OpenPlatform (https://developer-eu.foxesscloud.com/)
 - `sn` (text): inverter serial number (single device for now)
 - `interval` (number): poll interval in seconds (min 60, default 60)

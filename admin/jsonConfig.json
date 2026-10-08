@@ -20,7 +20,40 @@
                     "md": 12,
                     "lg": 12,
                     "xl": 12,
-                    "help": "API key from the FoxESS Cloud portal"
+                    "help": "token_help"
+                },
+                "_apiKeyHelp": {
+                    "type": "staticText",
+                    "text": "api_key_help_text",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "style": {
+                        "fontSize": "0.875rem",
+                        "whiteSpace": "pre-wrap",
+                        "marginTop": "8px",
+                        "padding": "10px 14px",
+                        "border": "1px solid #546e7a",
+                        "borderRadius": "6px",
+                        "backgroundColor": "rgba(84, 110, 122, 0.12)"
+                    }
+                },
+                "_apiKeyLink": {
+                    "type": "staticLink",
+                    "label": "api_key_link_label",
+                    "href": "https://developer-eu.foxesscloud.com/",
+                    "button": true,
+                    "variant": "outlined",
+                    "color": "primary",
+                    "icon": "web",
+                    "xs": 12,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "newLine": true
                 },
                 "sn": {
                     "type": "text",
