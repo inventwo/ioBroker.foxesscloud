@@ -231,7 +231,7 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.6.6 (2026-10-08)
 - (skvarel) Updated API key instructions to FoxCloud OpenPlatform (developer-eu.foxesscloud.com) in README and admin UI, including a help box and portal link
 
 ### 0.6.5 (2026-08-20)
@@ -246,9 +246,6 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 ### 0.6.2 (2026-06-02)
 - (skvarel) Documented Open API rate limit (per API key, multiple instances) in README and admin General tab
 - (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
-
-### 0.6.1 (2026-05-29)
-- (skvarel) Revised config and i18n
 
 ## Older changes
 - [CHANGELOG_OLD.md](CHANGELOG_OLD.md)

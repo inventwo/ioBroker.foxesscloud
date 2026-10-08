@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "foxesscloud",
-    "version": "0.6.5",
+    "version": "0.6.6",
     "news": {
+      "0.6.6": {
+        "en": "Updated API key instructions to FoxCloud OpenPlatform (developer-eu.foxesscloud.com) in README and admin UI, including a help box and portal link",
+        "de": "API-Anweisungen für FoxCloud OpenPlatform (developer-eu.foxesscloud.com) in README und Admin-UI aktualisiert, mit Hilfebox und Portal-Link",
+        "ru": "Обновленные инструкции по использованию ключей API для FoxCloud OpenPlatform (developer-eu.foxesscloud.com) в README и пользовательском интерфейсе администратора, включая окно справки и ссылку на портал",
+        "pt": "Instruções atualizadas da chave de API para o FoxCloud OpenPlatform (developer-eu.foxesscloud.com) no README e admin, incluindo help box e portal",
+        "nl": "Bijgewerkte API-sleutelinstructies voor FoxCloud OpenPlatform (developer-eu.foxesscloud.com) in README en de beheerinterface, inclusief een helpbox en portallink",
+        "fr": "Instructions d'API mises à jour pour FoxCloud OpenPlatform (developer-eu.foxesscloud.com) dans README et admin, y compris une boîte d'aide et un lien",
+        "it": "Istruzioni API aggiornate per FoxCloud OpenPlatform (developer-eu.foxesscloud.com) in README e admin UI, inclusi help box e link al portale",
+        "es": "Se actualizaron las instrucciones clave de API de FoxCloud OpenPlatform (developer-eu.foxesscloud.com) en README y la interfaz de usuario, con ayuda y enlace al portal",
+        "pl": "Zaktualizowano kluczowe instrukcje API dla FoxCloud OpenPlatform (developer-eu.foxesscloud.com) w README i interfejsie administratora, w tym pole pomocy i link do portalu",
+        "uk": "Оновлені інструкції щодо ключів API для FoxCloud OpenPlatform (developer-eu.foxesscloud.com) у README та інтерфейсі адміністратора, включаючи вікно довідки та посилання на портал",
+        "zh-cn": "在 README 和管理员用户界面中更新了 FoxCloud OpenPlatform（developer-eu.foxesscloud.com）的 API 密钥说明，包括帮助框和门户链接"
+      },
       "0.6.5": {
         "en": "Fixed repository checker warnings W9008 by aligning .gitignore with tracked test, .env.example and .vscode/settings.json files",
         "de": "Die Warnung W9008 des Repository-Checkers wurde behoben, indem die .gitignore-Datei mit den verfolgten Dateien test, .env.example und .vscode/settings.json abgeglichen wurde.",
@@ -80,19 +93,6 @@
         "pl": "Dodano obsługę do 24 strun PV z dynamicznym tworzeniem stanu przy pierwszym wystąpieniu\nDodano stany raportu dla dziennych, tygodniowych, miesięcznych i rocznych sum energii pochodzących z wartości API na całe życie\nStała obsługa wartości zerowej dla stanów temperatury inwertera i akumulatora\nEkstrahowana makeApiRequest () metoda dla czystszej komunikacji API\nScentralizowane wszystkie tłumaczenia nazwy państwa na jedną stałą STAN _ NAMES\nRaport stały stwierdza, że nie aktualizuje się w bieżącym okresie (wartości zostały zapisane tylko w okresie przewracania)\nWykonana sprawozdawczość energetyczna konfigurowalna za pomocą nowej zakładki Sprawozdawczość w interfejsu administratora\n",
         "uk": "Додано підтримку до 24 ПВ-рядок з динамічним державним створенням на першому етапі\nДодано стани звіту для щоденного, щотижневого, щомісячного та щорічного енергозабезпечення, отримані від значень життєвого API\nФіксована обробка значення null для інверторних і температурних станів батареї\nВитягований багаторазовий метод DoApiRequest() для очищення API\nЦентралізовані всі переклади державної назви в одну констанцію STATE NAMES\nВиправлено звітні стани, які не оновлюються протягом поточного періоду (значення були тільки письмові в період кочення)\nВиготовлений енергозберігаючий звіт через нову вкладку Звітування в адмін UI\n",
         "zh-cn": "在第一次出现时添加了对最多24个具有动态状态创建的光电字符串的支持\n增加的报告说明每日、每周、每月和每年根据终生API值得出的能源总量\n反转器和电池温度状态的固定无值处理\n用于清洁API通信的Api Request()方法\n集中所有州名翻译为单一的 State NAMES 常数\n固定报告表明,本期没有更新(数值仅在期间结转时写出)\n通过管理综合指数中的新报告标签使能源报告可以配置\n"
-      },
-      "0.5.1": {
-        "en": "Replaced process.env and process.exit usage in tools/api-test.js to fix compatibility issues reported by ioBroker repository checker (E5049, E5050)\nDowngraded @types/node from ^25 to ^22 to match supported Node.js version (W0066)",
-        "de": "Ersetzte process.env und process.exit Nutzung in tools/api-test.js, um Kompatibilitätsprobleme zu beheben, die von ioBroker Repository Checker (E5049, E505050) gemeldet wurden\nAbgekürzte @types/node von ^25 bis ^22, um die unterstützte Node.js-Version (W0066) anzupassen",
-        "ru": "Использование process.env и process.exit в инструментах/api-test.js для устранения проблем совместимости, о которых сообщает проверка репозитория ioBroker (E5049, E5050)\nПониженный @types/node с ^25 до ^22 в соответствии с поддерживаемой версией Node.js (W0066)",
-        "pt": "Uso substituído do process.env e process.exit em tools/api-test.js para corrigir problemas de compatibilidade relatados pelo verificador de repositório ioBroker (E5049, E5050)\nDowngraded @types/node de ^25 para ^22 para corresponder à versão suportada do Node.js (W0066)",
-        "nl": "Vervangde proces.env en proces.exit gebruik in tools/api-test.js om compatibiliteitsproblemen gemeld door ioBroker repository checker op te lossen (E5049, E5050)\nDowngraded @types/node van ^25 naar ^22 om de ondersteunde Node.js versie te vergelijken (W0066)",
-        "fr": "Remplaced process.env et process.exit utilisation in tools/api-test.js pour résoudre les problèmes de compatibilité signalés par ioBroker deposit checker (E5049, E5050)\nDéclassé @types/node de ^25 à ^22 pour correspondre à la version Node.js supportée (W0066)",
-        "it": "Process.env sostituito e process.exit utilizzo in strumenti/api-test.js per risolvere i problemi di compatibilità segnalati da ioBroker repository checker (E5049, E5050)\n@types/nodo degradato da ^25 a ^22 per abbinare la versione Node.js supportata (W0066)",
-        "es": "Proceso reemplazado.env y proceso.exit use in tools/api-test.js to fix compatibility issues reported by ioBroker repository checker (E5049, E5050)\nDegradado @tipos/nodo de ^25 a ^22 para coincidir con la versión Node.js compatible (W0066)",
-        "pl": "Zastąpione użycie process.env i process.exit w narzędziach / api- test.js w celu ustalenia problemów z kompatybilnością zgłaszanych przez sprawdzacz repozytorium jOBroker (E5049, E5050)\nSkrócony @ types / node od ^ 25 do ^ 22 do dopasowania obsługiwanej wersji Node.js (W0066)",
-        "uk": "Замінний процес.env і process.exit використання в інструментах /api-test.js для фіксації проблем сумісності, які повідомляються репозиторійним чекером ioBroker (E5049, E5050)\nDowngraded @types/node від ^25 до ^22, щоб відповідати підтримкою Node.js версії (W0066)",
-        "zh-cn": "替换 process.env 和 process.exit 工具/api-test.js 用于解决 ioBroker 寄存器检查器报告的兼容性问题(E5049, E5050)\n从 ^25 降级到 ^22 的@types/node 以匹配支持的 Node.js 版本 (W0066)"
       }
     },
     "titleLang": {

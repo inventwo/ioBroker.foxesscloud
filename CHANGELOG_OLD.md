@@ -1,4 +1,7 @@
 # Older changes
+## 0.6.1 (2026-05-29)
+- (skvarel) Revised config and i18n
+
 ## 0.6.0 (2026-05-27)
 - (StephanBeutel) Added support for up to 24 PV strings with dynamic state creation on first occurrence
 - (StephanBeutel) Added report states for daily, weekly, monthly, and yearly energy totals derived from lifetime API values
