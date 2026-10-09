@@ -231,7 +231,7 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.6.7 (2026-10-09)
 - (skvarel) Fixed repository checker warnings W5605 (outdated i18n keys) and updated @iobroker/testing to 6.3.0
 
 ### 0.6.6 (2026-10-08)
@@ -245,10 +245,6 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 
 ### 0.6.3 (2026-06-05)
 - (skvarel) Fixed repository checker error E0036
-
-### 0.6.2 (2026-06-02)
-- (skvarel) Documented Open API rate limit (per API key, multiple instances) in README and admin General tab
-- (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
 
 ## Older changes
 - [CHANGELOG_OLD.md](CHANGELOG_OLD.md)

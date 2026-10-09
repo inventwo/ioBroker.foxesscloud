@@ -1,4 +1,8 @@
 # Older changes
+## 0.6.2 (2026-06-02)
+- (skvarel) Documented Open API rate limit (per API key, multiple instances) in README and admin General tab
+- (skvarel) Migrated project rules from GitHub Copilot to Cursor rules
+
 ## 0.6.1 (2026-05-29)
 - (skvarel) Revised config and i18n
 
