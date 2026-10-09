@@ -231,6 +231,9 @@ Baselines are persisted in `report._baselines` so they survive adapter restarts.
 <!--
 	### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (skvarel) Fixed repository checker warnings W5605 (outdated i18n keys) and updated @iobroker/testing to 6.3.0
+
 ### 0.6.6 (2026-10-08)
 - (skvarel) Updated API key instructions to FoxCloud OpenPlatform (developer-eu.foxesscloud.com) in README and admin UI, including a help box and portal link
 
